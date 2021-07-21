@@ -2,7 +2,7 @@
 name: "Kate's House"
 title: "Kate's House"
 description: "집, 인테리어, 소품을 고르고 골라서 소개해 드리는 블로그 입니다."
-logo: 'KH'
+logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /kate_house
 google_analytics: 'UA-46278016-1'
