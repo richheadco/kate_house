@@ -4,7 +4,7 @@ title: "Kate's House"
 description: "집, 인테리어, 소품을 고르고 골라서 소개해 드리는 블로그 입니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /kate_house
+baseurl: /
 google_analytics: 'UA-202809530-1'
 disqus: 'kate-house'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
