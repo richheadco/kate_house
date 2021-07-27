@@ -5,6 +5,7 @@ description: "집, 인테리어, 소품을 고르고 골라서 소개해 드리�
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /
+url: 'https://richheadco.github.io/'
 google_analytics: 'UA-202809530-1'
 disqus: 'kate-house'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
