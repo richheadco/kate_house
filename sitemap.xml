@@ -1,337 +1,104 @@
+---
+layout: compress
+
+# The Sitemap template
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT License
+---
+
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for post in site.posts %}
+  {% unless post.published == false %}
 
+    {% capture lastmod %}
+      {% if post.lastmod %}
+        {{ post.lastmod }}
+      {% elsif post.date %}
+          {{ post.date }}
+        {% else %}
+          {{ site.time }}
+        {% endif %}
+      {% endcapture %}
 
-<url>
-  <loc>https://richheadco.github.io/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/index.html</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/about</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-9/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-8/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-7/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-6/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-56/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-55/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-54/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-53/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-52/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-51/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-50/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-5/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/page2/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/page3/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/page4/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/page5/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/categories</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/tags</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-49/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-48/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-47/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-46/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-45/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-44/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-43/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-42/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-41/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-40/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-4/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-39/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-38/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-37/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-36/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-35/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-34/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-33/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-32/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-31/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-30/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-3/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-29/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-28/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-27/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-26/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-25/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-24/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-23/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-22/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-21/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-20/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-2/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-19/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-18/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-17/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-16/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-15/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-14/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-13/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-12/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-11/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-10/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://richheadco.github.io/product-1/</loc>
-  <lastmod>2021-07-27T09:26:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <url>
+    <loc>{{ site.url | append: site.baseurl | append: post.url }}</loc>
+    <lastmod>{{ lastmod | date_to_xmlschema }}</lastmod>
 
+    {% if post.sitemap.changefreq %}
+    <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+    {% else %}
+    <changefreq>monthly</changefreq>
+    {% endif %}
+
+    {% if post.sitemap.priority %}
+    <priority>{{ post.sitemap.priority }}</priority>
+    {% else %}
+    <priority>0.5</priority>
+    {% endif %}
+  </url>
+  {% endunless %}
+{% endfor %}
+
+{% for page in site.pages %}
+
+  {% assign pass = false %}
+
+  {% for fuzzy in site.sitemap_exclude.fuzzy %}
+    {% if page.url contains fuzzy %}
+      {% assign pass = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% unless pass %}
+    {% for accurate in site.sitemap_exclude.accurate %}
+      {% assign len = accurate | size %}
+      {% capture beg %}{{ 0 | minus: len }}{% endcapture %}
+      {% capture tail %}{{ page.url | slice: beg, len }}{% endcapture %}
+
+      {% if tail == accurate %}
+        {% assign pass = true %}
+        {% break %}
+      {% endif %}
+
+    {% endfor %}
+  {% endunless %}
+
+  {% if pass %}
+    {% continue %}
+  {% endif %}
+
+  {% capture lastmod %}
+    {% if page.lastmod %}
+      {{ page.lastmod }}
+    {% elsif page.date %}
+      {{ page.date }}
+    {% else %}
+      {{ site.time }}
+    {% endif %}
+  {% endcapture %}
+
+  <url>
+    <loc>{{ site.url | append: site.baseurl | append: page.url | remove: "index.html" }}</loc>
+    <lastmod>{{ lastmod | date_to_xmlschema }}</lastmod>
+
+    {% if page.sitemap.changefreq %}
+    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+    {% else %}
+    <changefreq>monthly</changefreq>
+    {% endif %}
+
+    {% if page.sitemap.priority %}
+    <priority>{{ page.sitemap.priority }}</priority>
+    {% else %}
+    <priority>0.3</priority>
+    {% endif %}
+  </url>
+
+{% endfor %}
 
 </urlset>
