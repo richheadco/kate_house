@@ -1,32 +1,337 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}.html</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
 
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
+<url>
+  <loc>https://richheadco.github.io/kate_house/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/index.html</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/about</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-9/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-8/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-7/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-6/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-56/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-55/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-54/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-53/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-52/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-51/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-50/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-5/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/page2/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/page3/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/page4/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/page5/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/categories</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/tags</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-49/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-48/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-47/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-46/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-45/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-44/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-43/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-42/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-41/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-40/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-4/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-39/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-38/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-37/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-36/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-35/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-34/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-33/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-32/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-31/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-30/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-3/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-29/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-28/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-27/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-26/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-25/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-24/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-23/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-22/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-21/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-20/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-2/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-19/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-18/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-17/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-16/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-15/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-14/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-13/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-12/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-11/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-10/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://richheadco.github.io/kate_house/product-1/</loc>
+  <lastmod>2021-07-27T03:42:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-    </url>
-    {% endfor %}
+
 </urlset>
