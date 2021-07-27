@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://richheadco.github.io/kate_house/sitemap.xml
